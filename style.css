@@ -167,19 +167,19 @@ a {
         padding: 1rem;
         box-shadow: var(--shadow-md);
     }
-    
+
     .navbar-nav {
         text-align: center;
     }
-    
+
     .nav-link {
         margin: 0.5rem 0 !important;
     }
-    
+
     .nav-link.active::after {
         display: none;
     }
-    
+
     .nav-link.active {
         background-color: var(--bg-body);
         padding: 0.5rem 1rem;
@@ -217,11 +217,26 @@ a {
     left: -100px;
 }
 
-.hero-img {
-    border-radius: 50%;
-    box-shadow: var(--shadow-lg);
+.hero-img-wrapper {
+    width: 100%;
+    max-width: 400px;
     aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e0e7ff 0%, #ede9fe 100%);
+    border: 3px solid var(--accent);
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 /* Buttons */
@@ -254,6 +269,13 @@ a {
 .btn-outline:hover {
     border-color: var(--accent);
     color: var(--accent);
+}
+
+/* Utility: make buttons identical size */
+.btn-equal {
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-weight: 500;
 }
 
 /* Sections */
@@ -359,10 +381,14 @@ section {
     color: var(--text-secondary);
     opacity: 1;
 }
-.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: var(--text-secondary);
 }
-.form-control::-ms-input-placeholder { /* Microsoft Edge legacy */
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge legacy */
     color: var(--text-secondary);
 }
 
@@ -379,28 +405,28 @@ footer {
     h1 {
         font-size: 2.5rem;
     }
-    
+
     .navbar-brand {
         font-size: 1.25rem;
     }
-    
+
     section {
         padding: 3.5rem 0;
     }
-    
+
     .section-title {
         margin-bottom: 2.5rem;
     }
-    
+
     .feature-card {
         padding: 2rem;
     }
-    
+
     .hero-shapes .shape-1 {
         width: 200px;
         height: 200px;
     }
-    
+
     .hero-shapes .shape-2 {
         width: 250px;
         height: 250px;
@@ -412,142 +438,142 @@ footer {
     body {
         font-size: 15px;
     }
-    
+
     h1 {
         font-size: 2rem;
     }
-    
+
     h2 {
         font-size: 1.75rem;
     }
-    
+
     h3 {
         font-size: 1.25rem;
     }
-    
+
     .navbar {
         padding-top: 0.75rem;
         padding-bottom: 0.75rem;
     }
-    
+
     .navbar-brand {
         font-size: 1.25rem;
     }
-    
+
     .nav-link {
         margin: 0.5rem 0;
         padding: 0.5rem 0 !important;
     }
-    
+
     .theme-toggle {
         margin-left: 0.5rem;
         width: 36px;
         height: 36px;
     }
-    
+
     #hero {
         padding-top: 80px;
     }
-    
-    .hero-img {
+
+    .hero-img-wrapper {
         max-width: 80%;
         margin: 0 auto;
     }
-    
+
     section {
         padding: 2.5rem 0;
     }
-    
+
     .section-title {
         margin-bottom: 1.5rem;
     }
-    
+
     .section-title::after {
         width: 50px;
     }
-    
+
     .subtitle {
         font-size: 0.75rem;
         letter-spacing: 1px;
     }
-    
+
     .lead {
         font-size: 0.95rem;
     }
-    
+
     .d-flex.gap-3 {
         flex-direction: column;
         gap: 0.75rem !important;
     }
-    
+
     .btn-primary,
     .btn-outline {
         padding: 0.65rem 1.5rem;
         font-size: 0.95rem;
         width: 100%;
     }
-    
+
     .feature-card {
         padding: 1.5rem;
         border-radius: 15px;
     }
-    
+
     .feature-card i {
         font-size: 1.5rem;
     }
-    
+
     .feature-card h4 {
         font-size: 1.1rem;
     }
-    
+
     .timeline {
         padding-left: 1.5rem;
         border-left-width: 2px;
     }
-    
+
     .timeline-item {
         padding-bottom: 2rem;
     }
-    
+
     .timeline-item::before {
         left: -2rem;
     }
-    
+
     .badge {
         font-size: 0.8rem;
         padding: 0.4rem 0.6rem;
     }
-    
+
     .form-control {
         padding: 0.75rem;
         font-size: 1rem;
     }
-    
+
     .list-group-item {
         font-size: 0.95rem;
         padding: 0.5rem 0;
     }
-    
+
     .hero-shapes .shape {
         filter: blur(60px);
     }
-    
+
     .hero-shapes .shape-1 {
         width: 150px;
         height: 150px;
         top: 0;
         right: -30px;
     }
-    
+
     .hero-shapes .shape-2 {
         width: 180px;
         height: 180px;
         bottom: -50px;
         left: -50px;
     }
-    
+
     /* Contact section responsive layout */
-    .row > [class*='col-'] {
+    .row>[class*='col-'] {
         margin-bottom: 1.5rem;
     }
 }
@@ -557,76 +583,76 @@ footer {
     body {
         font-size: 14px;
     }
-    
+
     h1 {
         font-size: 1.75rem;
     }
-    
+
     h2 {
         font-size: 1.5rem;
     }
-    
+
     h3 {
         font-size: 1.1rem;
     }
-    
+
     .navbar {
         padding: 0.5rem 0;
     }
-    
+
     .navbar-brand {
         font-size: 1rem;
     }
-    
+
     .navbar-toggler {
         padding: 0.25rem;
     }
-    
+
     .nav-link {
         font-size: 0.9rem;
         margin: 0;
     }
-    
+
     .theme-toggle {
         width: 32px;
         height: 32px;
         margin-left: 0.25rem;
         font-size: 0.8rem;
     }
-    
+
     #hero {
         padding-top: 70px;
     }
-    
+
     .subtitle {
         font-size: 0.7rem;
         letter-spacing: 0.5px;
     }
-    
+
     section {
         padding: 1.5rem 0;
     }
-    
+
     .section-title {
         margin-bottom: 1rem;
     }
-    
+
     .section-title::after {
         width: 40px;
         height: 3px;
         margin-top: 0.75rem;
     }
-    
+
     .lead {
         font-size: 0.9rem;
         line-height: 1.5;
     }
-    
+
     .d-flex.gap-3 {
         flex-direction: column;
         gap: 0.5rem !important;
     }
-    
+
     .btn-primary,
     .btn-outline {
         padding: 0.6rem 1.2rem;
@@ -634,88 +660,88 @@ footer {
         width: 100%;
         border-radius: 40px;
     }
-    
+
     .feature-card {
         padding: 1.25rem;
         border-radius: 12px;
         margin-bottom: 1rem;
     }
-    
+
     .feature-card i {
         font-size: 1.75rem;
     }
-    
+
     .feature-card h4 {
         font-size: 1rem;
     }
-    
+
     .feature-card p {
         font-size: 0.9rem;
     }
-    
+
     .timeline {
         padding-left: 1.25rem;
     }
-    
+
     .timeline-item {
         padding-bottom: 1.5rem;
     }
-    
+
     .timeline-item::before {
         left: -1.85rem;
         width: 12px;
         height: 12px;
     }
-    
+
     .badge {
         font-size: 0.75rem;
         padding: 0.35rem 0.5rem;
     }
-    
+
     .form-control {
         padding: 0.65rem;
         font-size: 0.95rem;
         border-radius: 8px;
     }
-    
+
     .form-control:focus {
         box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
     }
-    
+
     .list-group-item {
         font-size: 0.9rem;
         padding: 0.4rem 0;
     }
-    
+
     .hero-shapes .shape {
         filter: blur(50px);
     }
-    
+
     .hero-shapes .shape-1 {
         width: 100px;
         height: 100px;
         top: 20px;
         right: -40px;
     }
-    
+
     .hero-shapes .shape-2 {
         width: 130px;
         height: 130px;
         bottom: -30px;
         left: -50px;
     }
-    
-    .hero-img {
+
+    .hero-img-wrapper {
         max-width: 70%;
     }
-    
+
     /* Contact cards stacked on mobile */
     .d-flex.align-items-center {
         flex-direction: column;
         text-align: center;
         margin-bottom: 1rem;
     }
-    
+
     .d-flex.align-items-center .me-3 {
         margin-right: 0 !important;
         margin-bottom: 0.75rem;

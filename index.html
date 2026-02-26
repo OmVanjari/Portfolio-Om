@@ -52,16 +52,19 @@
                 <div class="col-lg-6 order-2 order-lg-1">
                     <span class="subtitle">Welcome to my world</span>
                     <h1 class="display-3 fw-bold mb-3">Hi, I'm <span class="text-accent">Om Vanjari</span></h1>
-                        <h2 class="h3 mb-4 text-secondary">I am a fullstack developer</h2>
+                    <h2 class="h3 mb-4 text-secondary">I am a Fullstack developer</h2>
                     <p class="lead text-secondary mb-5">Computer Science student & developer crafting clean, efficient,
                         and scalable web solutions.</p>
                     <div class="d-flex gap-3">
-                        <a href="#contact" class="btn btn-primary">Let's Talk</a>
-                        <a href="#projects" class="btn btn-outline">View Work</a>
+                        <a href="#contact" class="btn btn-primary btn-equal">Let's Talk</a>
+                        <a href="#projects" class="btn btn-outline btn-equal">View Work</a>
+                        <a href="resume.pdf" class="btn btn-primary btn-equal" download>Download Resume</a>
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 mb-5 mb-lg-0 text-center">
-                    <img src="profile.jpeg" alt="Om Vanjari" class="img-fluid hero-img w-75">
+                    <div class="hero-img-wrapper">
+                        <img src="profile.jpeg" alt="Om Vanjari" class="hero-img">
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,24 +96,35 @@
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-md-4">
-                    <div class="feature-card text-center">
+                    <div class="feature-card text-center h-100">
                         <div class="mb-4 text-accent"><i class="fas fa-code fa-3x"></i></div>
-                        <h4>Languages</h4>
-                        <p class="text-secondary">C, C++, Java, Python, HTML, CSS, JavaScript, Node js, React</p>
+                        <h5>Development</h5>
+                        <p class="text-secondary mb-0 small text-start">
+                            <strong>Languages:</strong> Python, JS, C, C++, PHP<br>
+                            <strong>Frontend:</strong> React.js, HTML, CSS, Bootstrap<br>
+                            <strong>Backend:</strong> Python(Flask), REST APIs
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="feature-card text-center">
-                        <div class="mb-4 text-accent"><i class="fas fa-database fa-3x"></i></div>
-                        <h4>Databases & Tools</h4>
-                        <p class="text-secondary">SQL/MySQL, VS Code, Jupyter Notebook</p>
+                    <div class="feature-card text-center h-100">
+                        <div class="mb-4 text-accent"><i class="fas fa-tools fa-3x"></i></div>
+                        <h5>Tools & DB</h5>
+                        <p class="text-secondary mb-0 small text-start">
+                            <strong>Database:</strong> SQL/MySQL<br>
+                            <strong>Tools:</strong> Git, VS Code, Jupyter, Render<br>
+                            <strong>Libraries:</strong> Flask, Pandas, NumPy, QR Libs
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="feature-card text-center">
-                        <div class="mb-4 text-accent"><i class="fas fa-users fa-3x"></i></div>
-                        <h4>Soft Skills</h4>
-                        <p class="text-secondary">Problem Solving, Quick Learner, Adaptability</p>
+                    <div class="feature-card text-center h-100">
+                        <div class="mb-4 text-accent"><i class="fas fa-brain fa-3x"></i></div>
+                        <h5>Professional</h5>
+                        <p class="text-secondary mb-0 small text-start">
+                            <strong>Core:</strong> OOPS, CRUD, Auth, API, Responsive<br>
+                            <strong>Soft:</strong> Problem-solving, Adaptability, Quick Learner
+                        </p>
                     </div>
                 </div>
             </div>
@@ -150,25 +164,32 @@
                 </div>
                 <div class="col-lg-6">
                     <h3 class="mb-4">Experience & Trainings</h3>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <span class="badge bg-accent mb-2">Feb - Mar (Intern)</span>
-                            <h5>Python Developer</h5>
-                            <p class="text-secondary">CodeSoft</p>
-                        </div>
-                        <div class="timeline-item">
-                            <span class="badge bg-accent mb-2">Nov - Dec (Intern)</span>
-                            <h5>Python Developer</h5>
-                            <p class="text-secondary">Codec Technologies</p>
-                        </div>
-                        <div class="timeline-item">
-                            <span class="badge bg-accent mb-2">Aug - Sep 2021</span>
-                            <h5>Industrial Training</h5>
-                            <p class="text-secondary">Sumago Infotech Pvt Ltd</p>
-                        </div>
+                    <div class="timeline-item">
+                        <span class="badge bg-accent mb-2">Feb 2026 - Pursuing</span>
+                        <h5>Frontend Developer Intern</h5>
+                        <p class="text-secondary mb-1">Athenura Pvt. Ltd</p>
+                        <small class="text-muted d-block">• Developed responsive web pages using HTML, CSS, JS and
+                            React</small>
+                        <small class="text-muted d-block">• Improved UI design and user experience</small>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="badge bg-accent mb-2">Nov - Dec 2025</span>
+                        <h5>Python Developer Intern</h5>
+                        <p class="text-secondary mb-1">Codec Technologies</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="badge bg-accent mb-2">Feb - Mar 2024</span>
+                        <h5>Python Developer</h5>
+                        <p class="text-secondary">Codesoft</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="badge bg-accent mb-2">Aug - Sep 2021</span>
+                        <h5>Industrial Training</h5>
+                        <p class="text-secondary">Sumago Infotech Pvt Ltd</p>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -180,41 +201,63 @@
                 <h2>Featured Projects</h2>
             </div>
             <div class="row g-4">
+                <!--Project 1  -->
                 <div class="col-md-6">
-                    <div class="feature-card">
+                    <div class="feature-card h-100">
                         <div class="d-flex justify-content-between align-items-start mb-4">
-                            <i class="fas fa-heartbeat fa-2x text-accent"></i>
+                            <i class="fas fa-qrcode fa-2x text-accent"></i>
                             <div class="d-flex gap-3">
                                 <a href="https://github.com/1jariom" class="text-secondary"><i
                                         class="fab fa-github fa-lg"></i></a>
-                                <!-- <a href="#" class="text-secondary"><i class="fas fa-external-link-alt fa-lg"></i></a> -->
                             </div>
                         </div>
-                        <h3>Heart Disease Prediction</h3>
-                        <p class="text-secondary mb-4">A Machine Learning model that analyzes patient data to predict
-                            potential heart disease risks with high accuracy.</p>
-                        <div class="d-flex gap-2">
+                        <h3>QR-Based Attendance System</h3>
+                        <p class="text-secondary mb-3 small">Web-based contactless system using Flask with dynamic QR
+                            codes refreshing every 10 seconds. Achieved 60-90% reduction in processing time.</p>
+                        <div class="d-flex flex-wrap gap-2">
                             <span class="badge badge-custom border">Python</span>
-                            <span class="badge badge-custom border">ML</span>
+                            <span class="badge badge-custom border">Flask</span>
+                            <span class="badge badge-custom border">MySQL</span>
                         </div>
                     </div>
                 </div>
+                <!-- Project 2 -->
                 <div class="col-md-6">
-                    <div class="feature-card">
+                    <div class="feature-card h-100">
                         <div class="d-flex justify-content-between align-items-start mb-4">
                             <i class="fas fa-notes-medical fa-2x text-accent"></i>
                             <div class="d-flex gap-3">
                                 <a href="https://github.com/1jariom" class="text-secondary"><i
                                         class="fab fa-github fa-lg"></i></a>
-                                <!-- <a href="#" class="text-secondary"><i class="fas fa-external-link-alt fa-lg"></i></a> -->
                             </div>
                         </div>
-                        <h3>Blood Bank System</h3>
-                        <p class="text-secondary mb-4">A comprehensive web application to manage blood inventory, donor
-                            registrations, and hospital requests efficiently.</p>
-                        <div class="d-flex gap-2">
+                        <h3>Blood Bank Management System</h3>
+                        <p class="text-secondary mb-3 small">Management system to streamline tracking/distribution of
+                            blood units, donor records and real-time inventory levels.</p>
+                        <div class="d-flex flex-wrap gap-2">
                             <span class="badge badge-custom border">PHP</span>
                             <span class="badge badge-custom border">MySQL</span>
+                            <span class="badge badge-custom border">HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-6">
+                    <div class="feature-card h-100">
+                        <div class="d-flex justify-content-between align-items-start mb-4">
+                            <i class="fas fa-heartbeat fa-2x text-accent"></i>
+                            <div class="d-flex gap-3">
+                                <a href="https://github.com/1jariom" class="text-secondary"><i
+                                        class="fab fa-github fa-lg"></i></a>
+                            </div>
+                        </div>
+                        <h3>Heart Disease Prediction System</h3>
+                        <p class="text-secondary mb-3 small">ML model using classification algorithms to predict heart
+                            disease risks. Includes data preprocessing & Pandas/Scikit-learn.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge badge-custom border">Python</span>
+                            <span class="badge badge-custom border">ML</span>
+                            <span class="badge badge-custom border">S-Learn</span>
                         </div>
                     </div>
                 </div>
@@ -237,11 +280,14 @@
                                 class="fas fa-check-circle text-accent me-2"></i><strong>Info Planet:</strong> C, C++,
                             Java, Python</li>
                         <li class="list-group-item border-0"><i
-                                class="fas fa-check-circle text-accent me-2"></i><strong>MS-CIT:</strong> 90.00%</li>
+                                class="fas fa-check-circle text-accent me-2"></i><strong>Skillected Pvt. Ltd.:</strong>
+                            Full Stack Development in Python</li>
                     </ul>
                 </div>
                 <div class="col-lg-6">
                     <ul class="list-group list-group-flush">
+                        <li class="list-group-item border-0"><i
+                                class="fas fa-check-circle text-accent me-2"></i><strong>MS-CIT:</strong> 90%</li>
                         <li class="list-group-item border-0"><i
                                 class="fas fa-check-circle text-accent me-2"></i><strong>Tally:</strong> 70.00%</li>
                         <li class="list-group-item border-0"><i
@@ -255,6 +301,9 @@
                 <span class="subtitle">Get In Touch</span>
                 <h2>Contact Me</h2>
             </div>
+            <!-- <div class="text-center mb-4">
+                <a href="resume.pdf" class="btn btn-primary" download>Download Resume</a>
+            </div> -->
             <div class="row justify-content-center">
                 <div class="col-lg-5 mb-4">
                     <div class="feature-card h-auto">
@@ -278,8 +327,8 @@
                             </div>
                             <div>
                                 <h6 class="mb-0">LinkedIn</h6>
-                                <a href="https://www.linkedin.com/in/om-vanjari/"
-                                    class="text-secondary">/in/om-vanjari</a>
+                                <a href="https://www.linkedin.com/in/omvanjari/"
+                                    class="text-secondary">/in/omvanjari</a>
                             </div>
                         </div>
                     </div>
@@ -310,7 +359,7 @@
     <!-- Footer -->
     <footer class="py-4 text-center text-secondary">
         <div class="container">
-            <small>&copy; 2025 Om Vanjari. Built with Bootstrap 5.</small>
+            <small>&copy; Created with by Om Vanjari</small>
         </div>
     </footer>
 
