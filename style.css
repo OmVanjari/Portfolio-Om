@@ -89,6 +89,9 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.7;
     overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
 }
 
 h1,
@@ -433,6 +436,17 @@ section {
 
 .feature-card:hover::after {
     opacity: 1;
+}
+
+.feature-card .d-flex.gap-3 a {
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.feature-card .d-flex.gap-3 a:hover {
+    color: var(--accent) !important;
+    transform: translateY(-3px);
 }
 
 .badge-custom {
