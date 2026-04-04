@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Typing Effect
     const typingText = document.querySelector('#typing-text');
-    const roles = ['Web Applications', 'Digital Solutions', 'Future Tech'];
+    const roles = ['Fullstack Developer', 'Python Developer', 'Web Enthusiast'];
     let roleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -36,36 +36,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     type();
 
-    // Fade In on Scroll
-    const observerOptions = {
-        threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('.feature-card, .timeline-item, .section-title').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-        observer.observe(el);
+    // Initialize AOS
+    AOS.init({
+        once: true,
+        offset: 50,
+        duration: 800,
+        easing: 'ease-out-cubic'
     });
 
-    // CSS class for visible (handled here to keep CSS clean if JS fails)
-    const style = document.createElement('style');
-    style.innerHTML = `
-        .visible {
-            opacity: 1 !important;
-            transform: translateY(0) !important;
-        }
-    `;
-    document.head.appendChild(style);
     // Theme Toggle
     const themeToggle = document.getElementById('theme-toggle');
     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
@@ -101,7 +79,4 @@ document.addEventListener('DOMContentLoaded', () => {
             setTheme('dark');
         }
     });
-
-    // Make navbar transparent on scroll logic fix for dark mode if needed
-    // (Optional: keeping existing scroll logic as is)
 });

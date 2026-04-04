@@ -267,6 +267,7 @@ a {
     padding: 3px;
     background: linear-gradient(135deg, var(--accent), var(--accent-hover));
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     opacity: 0;
@@ -364,6 +365,23 @@ a {
     padding: 0.75rem 2rem;
     border-radius: 50px;
     font-weight: 500;
+}
+
+/* Typing cursor animation */
+.cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
 
 /* Sections */
