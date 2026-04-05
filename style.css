@@ -83,12 +83,14 @@
     transform: rotate(15deg);
 }
 
+html,
 body {
     background-color: var(--bg-body);
     color: var(--text-primary);
     font-family: 'Inter', sans-serif;
     line-height: 1.7;
     overflow-x: hidden;
+    width: 100%;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     position: relative;
